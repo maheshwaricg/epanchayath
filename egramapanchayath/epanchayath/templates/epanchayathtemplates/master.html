@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <div id="grad1">
+    <nav class="nav-1">
+        <div class="nav-bar">
+            <div class="nav-img">
+                <img src="{% static 'images/logo.jpg' %}" alt="" width="50px">
+            </div>
+            <div class="navi-list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href=""> <button class="btn-1">Feedback</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+        {% block content %}
+        {% endblock %}
+    </div>
+    <section class="sec-1">
+        <div class="about">
+            <div class="about-box">
+                <div class="box-text">
+                    <h3 class="cmpny">About Us</h3>
+                    <p>Baabtra, the best software training company in <br /> Calicut has proved its expertise by
+                        training and <br /> placing several hundreds of students both in <br /> MNC’s like UST
+                        Global,
+                        Infosys, Oracle etc and SME’s like Nucore Software Solutions, Sesame, <br /> IOSS, ULTS.</p>
+                </div>
+
+            </div>
+            <div class="company">
+                <p class="cmpny">Company</p><br />
+                <p>About Us</p>
+                <p>Testimonials</p>
+                <p>Services</p>
+                <p>Gallery</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="course">
+                <p class="cmpny">Services</p><br />
+                <p>Income Certificate</p>
+                <p>Caste Certificate</p>
+                <p>Birth/Death Correction</p>
+                <p>Ownership Certificate</p>
+            </div>
+            <div class="contact">
+                <p class="cmpny">Contact</p><br />
+                <p>+91 859205844</p>
+                <p>info@baabtra.com</p>
+                <p>CAFIT Square, 5th Floor, HiLite <br />Business Park,Thondayad <br />Bye-Pass, Hilite City,
+                    Calicut,
+                    <br />Kerala, India
+                </p>
+            </div>
+        </div>
+    </section>
+    <div>
+        
+    </div>
+ 
+    <section class="sec-2">
+        <div class="about">
+            <div class="about-img">
+                <img src="{% static 'images/symbol.png' %}" alt="" width="200px">
+            </div>
+            <div class="about-txt">
+                <p>E-Gramapanchayath</p>
+            </div>
+        </div>
+    </section>
+  
+</body>
+</html>

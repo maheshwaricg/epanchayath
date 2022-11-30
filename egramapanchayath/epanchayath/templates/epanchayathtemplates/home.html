@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'js/javascript.js' %}">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+</head>
+
+<body>
+    <div id="grad1">
+
+        <nav class="nav-1">
+            <div class="nav-bar">
+                <div class="nav-img">
+                    <img src="{% static 'images/logo.jpg' %}" alt="" width="50px">
+                </div>
+                <div class="navi-list">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href=""> <button class="btn-1">Feedback</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="heading">
+            <div class="nav1-img">
+                <img src="{% static 'images/symbol.png' %}" alt="" width="200px">
+            </div>
+            <h1>E-GRAMAPANCHAYATH</h1>
+        </div>
+        <div class="animation" style="max-width:100%">
+            <img class="mySlides" src="{% static 'images/1.jpg' %}" alt="">
+            <img class="mySlides" src="{% static 'images/2.jpg' %}" alt="">
+            <img class="mySlides" src="{% static 'images/3.jpg' %}" alt="">
+        </div>
+       
+
+
+        <section class="sec-1">
+            <div class="about">
+                <div class="about-box">
+                    <div class="box-text">
+                        <h3 class="cmpny">About Us</h3>
+                        <p>Baabtra, the best software training company in <br /> Calicut has proved its expertise by
+                            training and <br /> placing several hundreds of students both in <br /> MNC’s like UST
+                            Global,
+                            Infosys, Oracle etc and SME’s like Nucore Software Solutions, Sesame, <br /> IOSS, ULTS.</p>
+                    </div>
+
+                </div>
+                <div class="company">
+                    <p class="cmpny">Company</p><br />
+                    <p>About Us</p>
+                    <p>Testimonials</p>
+                    <p>Services</p>
+                    <p>Gallery</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="course">
+                    <p class="cmpny">Services</p><br />
+                    <p>Income Certificate</p>
+                    <p>Caste Certificate</p>
+                    <p>Birth/Death Correction</p>
+                    <p>Ownership Certificate</p>
+                </div>
+                <div class="contact">
+                    <p class="cmpny">Contact</p><br />
+                    <p>+91 859205844</p>
+                    <p>info@baabtra.com</p>
+                    <p>CAFIT Square, 5th Floor, HiLite <br />Business Park,Thondayad <br />Bye-Pass, Hilite City,
+                        Calicut,
+                        <br />Kerala, India
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="sec-2">
+            <div class="about">
+                <div class="about-img">
+                    <img src="{% static 'images/symbol.png' %}" alt="" width="200px">
+                </div>
+                <div class="about-txt">
+                    <p>E-Gramapanchayath</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+</body>
+
+</html>

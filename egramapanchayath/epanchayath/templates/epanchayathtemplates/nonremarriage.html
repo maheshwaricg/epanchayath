@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'js/javascript.js' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <form>
+        <div class="container2">
+            <center>
+                <h1> Application Form</h1>
+            </center>
+            <hr>
+            <label class="heading-1"> Firstname </label>
+            <input type="text" name="firstname" placeholder="Firstname" size="15" required />
+            <label class="heading-1"> Lastname: </label>
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required />
+            <div>
+
+                <div class="divv">
+                    <label class="heading-1">Gender :</label><br>
+                    <input type="radio" value="Male" class="gender" checked> Male
+                    <input type="radio" value="Female" class="gender"> Female
+                    <input type="radio" value="Other" class="gender"> Other
+
+                </div>
+                <div class="divv">
+                    <label class="heading-1">Date Of Birth</label>
+                    <input type="date" name="dob" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">House No</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">House Name</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">Locality</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">PostOffice</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">Pincode</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">District : </label>
+
+                    <select class="heading-2">
+                        <option value="">Select One</option>
+                        <option value="">Kannur</option>
+                        <option value="">Kozhikode</option>
+                        <option value="">Kottayam</option>
+                        <option value="">Alappuzha</option>
+                        <option value="">Eranamkulam</option>
+                        <option value="">Idukki</option>
+                        <option value="">Kasargod</option>
+                        <option value="">Kollam</option>
+                        <option value="">Malappuram</option>
+                        <option value="">Palakkad</option>
+                        <option value="">Pathanamthitta</option>
+                        <option value="">Thiruvananthapuram</option>
+                        <option value="">Thrissur</option>
+                        <option value="">Wayanad</option>
+
+                    </select>
+                </div>
+                <div class="divv">
+                    <label class="heading-1">Taluk</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">Village</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">LocalBody Type</label>
+                    <select class="heading-2">
+                        <option value="">Select One</option>
+                        <option value="">Gramapanchayath</option>
+                        <option value="">Municipality</option>
+                        <option value="">Corporation</option>
+
+                    </select>
+                </div>
+                <div class="divv">
+                    <label class="heading-1">LocalBody</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="divv">
+                    <label class="heading-1">Ration Card No</label>
+                    <input type="text" name="" id="">
+                </div>
+                <label class="heading-1">Mobile :</label>
+                <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+                <input type="text" name="phone" placeholder="phone no." size="10" / required> <br><br>
+
+                <div class="divv">
+                    <h3> Documents Required</h3>
+                </div> <br><br>
+                <div>
+                    <h4>Adhar Card</h4>
+                    <div class="upload">
+                        <input type="file" id="myFile" name="filename">
+                        <input type="submit">
+                    </div>
+                    <div>
+                        <h4>Ration Card</h4>
+                        <div class="upload">
+                            <input type="file" id="myFile" name="filename">
+                            <input type="submit">
+                        </div>
+                        <div>
+                            <h4>Landtax</h4>
+                            <div class="upload">
+                                <input type="file" id="myFile" name="filename">
+                                <input type="submit">
+                            </div>
+                            <h4>Death Certificate</h4>
+                            <div class="upload">
+                                <input type="file" id="myFile" name="filename">
+                                <input type="submit">
+                            </div>
+                            <h4>Affidavit</h4>
+                            <div class="upload">
+                                <input type="file" id="myFile" name="filename">
+                                <input type="submit">
+                            </div>
+                            
+
+
+                            <button type="submit" class="registerbtn">Submit</button>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/staffpage.css' %}">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>E-Gramapanchayath</h1>
+        </div>
+        <ul>
+            <li><img src="admin.png" alt="">&nbsp; <span>Profile</span> </li>
+            <li><img src="reading-book (1).png" alt="">&nbsp;<span>Pending Applications</span> </li>
+            <li><img src="teacher2.png" alt="">&nbsp;<span>Approved Applications</span> </li>
+            <li><img src="teacher2.png" alt="">&nbsp;<span>Resubmited Applications</span> </li>
+            <li><img src="teacher2.png" alt="">&nbsp;<span>Rejected Applications</span> </li>
+            <li><img src="settings.png" alt="">&nbsp;<span>Logout</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="{% static 'images/search.png' %}" alt=""></button>
+                </div>
+                <div class="user">
+
+                    <div class="img-case">
+                        <img src="{% static 'images/admin.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>2194</h1>
+                        <h3>Pending Applications</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="students.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>1500</h1>
+                        <h3>Approved Applications</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="teachers.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>20</h1>
+                        <h3>Resubmitted Applications</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="schools.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>5</h1>
+                        <h3>Rejected Applications</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="income.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
